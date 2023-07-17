@@ -1,0 +1,77 @@
+@import "variables";
+
+// define the styles for the menu-bar section
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $menu-bar-width;
+  height: $menu-bar-height;
+  position: fixed;
+  bottom: 0;
+  background: $menu-bar-background;
+  backdrop-filter: $menu-bar-backdrop-filter;
+
+  // define the styles for the menu-bar-wrapper section
+  &-wrapper {
+    width: $menu-bar-wrapper-width;
+    height: $menu-bar-wrapper-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // define the styles for the menu-bar-menu item
+  .menu-item {
+    margin-top: $menu-item-margin-top;
+    margin-bottom: $menu-item-margin-bottom;
+    position: relative;
+
+    // define the styles for the notification item
+    .notification-item .anticon {
+      position: relative;
+    }
+
+    .notification-badge {
+      position: absolute;
+      top: 0;
+      right: 0rem;
+      width: $notification-badge-width;
+      height: $notification-badge-height;
+      border-radius: $notification-badge-border-radius;
+      background-color: $notification-badge-background-color;
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .menu-bar {
+    margin-left: -1.5rem;
+
+  }
+  
+}
+@media (min-width: 500px) {
+  .menu-bar {
+    margin-left: -3rem;
+
+  }
+}
+@media (min-width: 550px) {
+  .menu-bar {
+    margin-left: -4.5rem;
+
+  }
+}
+@media (min-width: 600px) {
+  .menu-bar {
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-bar-wrapper{
+    display: flex;
+    margin-right: 6rem;
+  }
+}

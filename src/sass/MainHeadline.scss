@@ -1,0 +1,41 @@
+@import "variables";
+// define the styles for the headline section
+.headline {
+  margin: $headline-margin-top $headline-margin-right $headline-margin-bottom
+    $headline-margin-left;
+  width: $headline-width;
+  height: $headline-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $headline-background;
+  //  define the styles for the text section of the headline
+  &__text,
+  &__highlighted-text {
+    font-size: $headline-text-font-size;
+    font-style: normal;
+    line-height: $headline-text-line-height;
+    font-weight: $headline-text-font-weight;
+  }
+
+  &__highlighted-text {
+    color: $highlight-color;
+    font-weight: $headline-highlighted-text-font-weight;
+  }
+}
+// define the styles for the headline section for the mobile view bigger than 450
+@media (min-width: 450px) {
+  .headline {
+    margin-left: 3rem;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .headline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,80 @@
+// Import the necessary variable definitions
+@import "variables";
+
+// Define styles for the search form
+.search-form {
+  // Position the form relative to its parent container
+  margin-left: 1.81rem;
+  margin-right: 2.31rem;
+  margin-top: $margin-top;
+
+  // Define styles for the search label
+  .search-label {
+    border: none;
+    height: $label-height;
+    width: $label-width;
+  }
+
+  // Define styles for the search input group
+  .search-input-group {
+    padding: $input-padding;
+    border-radius: $input-border-radius;
+    background: $input-background;
+    box-shadow: $input-box-shadow;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    gap: $input-gap;
+
+    // Define styles for the search icon
+    .search-icon {
+      color: $search-icon-color;
+      opacity: $search-icon-opacity;
+    }
+  }
+
+  // Define styles for the anticon
+  .anticon {
+    background-color: transparent;
+    font-size: 1.2rem;
+  }
+
+  // Define styles for the search input
+  #search-input {
+    border: none;
+    height: $search-input-height;
+    color: $search-input-color;
+    line-height: $search-input-line-height;
+    font-size: $search-input-font-size;
+    font-style: $search-input-font-style;
+    background: transparent;
+
+    // Define styles for the placeholder text
+    &::placeholder {
+      background: transparent;
+      color: $search-placeholder-color;
+      font-size: $search-input-font-size;
+      font-style: normal;
+      font-weight: $search-placeholder-font-weight;
+      line-height: $search-input-line-height;
+      opacity: $search-placeholder-opacity;
+    }
+  }
+}
+
+// Modify the form's left and right margins for viewports that are at least 450px wide
+@media (min-width: 450px) {
+  .search-form {
+    margin-left: 3rem;
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .search-form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+}

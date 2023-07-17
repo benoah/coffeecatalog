@@ -1,0 +1,84 @@
+// Variables for the app
+
+
+// Global variables
+$base-font-size: 16px;
+$background-effects-dimension: 22rem;
+$background-color: rgba(12, 15, 20, 1);
+$white-color: rgba(255, 255, 255, 1);
+$highlight-color: rgba(217, 128, 70, 1);
+$glow-color: rgba(217, 128, 70, 0.25);
+$secondary-color: rgba(13, 18, 21, 1);
+$icon-color: rgba(131, 134, 141, 1);
+$grey-color: rgba(196, 196, 196, 0.08);
+
+// headline variables
+$headline-margin-top: 1.81rem;
+$headline-margin-right: 9.37rem;
+$headline-margin-bottom: 0;
+$headline-margin-left: 2.06rem;
+$headline-width: 12rem;
+$headline-height: 4rem;
+$headline-background: rgba(12, 15, 20, 1);
+$headline-text-font-size: 1.875rem;
+$headline-text-line-height: 2rem;
+$headline-text-font-weight: 400;
+$headline-highlighted-text-color: var(--highlight-color);
+$headline-highlighted-text-font-weight: 500;
+
+// heading variables screen size bigger than 450px
+$desktop-headline-margin-top: 2.81rem;
+$desktop-headline-margin-left: 4rem;
+
+// search box variables
+$margin-top: 2.75rem;
+$margin-bottom: $margin-top;
+
+$label-height: 50px;
+$label-width: 305px;
+
+$input-padding: 0.8125rem 1.0625rem;
+$input-border-radius: 1rem;
+$input-background: rgba(255, 255, 255, 0.08);
+$input-box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.25);
+$input-gap: 0.625rem;
+
+$search-icon-color:rgba(217, 128, 70, 1);
+$search-icon-opacity: 0.5;
+
+$search-input-height: 0.9375rem;
+$search-input-color: #fff;
+$search-input-line-height: 0.938rem;
+$search-input-font-size: 0.8125rem;
+$search-input-font-style: normal;
+
+$search-placeholder-color: rgba(255, 255, 255, 1);
+$search-placeholder-font-weight: 500;
+$search-placeholder-opacity: 0.33;
+
+// TopNav variables
+$margin-top: 2.75rem;
+$margin-left: 1.38rem;
+$margin-right: 2.31rem;
+$navbar-width: 19.75rem;
+$navbar-height: 2.625rem;
+$base-color: rgba(12, 15, 20, 1);
+$border-color: rgba(12, 15, 20, 1);
+$background-gradient-start: rgba(34, 39, 45, 1);
+$background-gradient-end: rgba(13, 18, 21, 1);
+
+
+// MenuItems variables
+$menu-bar-width: 100vw;
+$menu-bar-height: 4.625rem;
+$menu-bar-background: rgba(13, 16, 21, 0.96);
+$menu-bar-backdrop-filter: blur(2px);
+$menu-bar-wrapper-width: 17.8125rem;
+$menu-bar-wrapper-height: 1.5rem;
+$menu-item-margin-top: 1.56rem;
+$menu-item-margin-bottom: 1.56rem;
+$notification-badge-width: 0.5rem;
+$notification-badge-height: 0.5rem;
+$notification-badge-border-radius: 1.5rem 1.5rem 0;
+$notification-badge-background-color: #ea4951;
+
